@@ -1,0 +1,115 @@
+# Java compiled class files
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Getting the files. 
+*target/* 
+
+# Package Files
+*.war
+*.ear
+*.jar
+
+# virtual machine crash logs
+hs_err_pid*
+
+# Ignore VLT files
+.vlt
+.vlt-sync.log
+.vlt-sync-config.properties
+
+# Ignore Quickstart launches in the source tree
+crx-quickstart
+
+# Ignore compilation results
+target
+bin
+
+# Ignore IDE and Operating System artifacts
+*.idea*
+.classpath
+.metadata
+.project
+.settings
+maven-eclipse.xml
+*.iml
+*.ipr
+*.iws
+.DS_Store
+
+# ignore checkstyle setting
+.checkstyle
+config-definition/.checkstyle
+core/.checkstyle
+
+# pmd
+config-definition/.pmd
+core/.pmd
+
+# jenv generated local java-version file
+.java-version
+
+# ignore ui build libraries and files
+node_modules
+.gulp-scss-cache/src/scss
+*.css.map
+*.js.map
+
+# ignore the dist dir
+intranet/ui.apps/src/main/content/ui_build/dist/
+
+/core/nbproject/
+
+# ignore ansible roles
+/ansible/roles
+servers
+frontend_copy.sh
+js.coverage/
+
+# ignore vim swap files
+*.swp
+
+# ignore build package files
+*.rpm
+*.deb
+
+#
+# Copied from within the project
+#
+
+# 1. folder core/
+core/*.checkstyle
+core/*.pmd
+
+# 2. folder package/
+package/dist/
+package/**/dist/
+package/**/zeppelin.webpack.aemclientlibs/dist/
+package/**/zeppelin.webpack.templating/dist/
+package/**/zeppelin.webpack.templating/resources/
+package/**/_iconfont_zep-icons.scss
+package/**/_iconfont_zep-sge.scss
+package/**/src/assets/fonts/zep-icons.*
+package/**/src/assets/fonts/zep-sge.*
+
+# 3. folder overlay-package/
+overlay-package/src/main/jcr_root/META-INF/
+
+# 4. folder complete/jcr_root/
+complete/jcr_root/META-INF/
+
+# 5. folder config-definition/
+config-definition/*.checkstyle
+config-definition/*.pmd
+
+# 6. folder config-package/
+config-package/resources/
+
+# 7. folder package/src/main/webpack.core/
+package/src/main/webpack.core/node_modules/
+package/src/main/webpack.core/node/
+!package/src/main/webpack.core/bin/
+
+/ui.tests/test-module-wdio/node/
